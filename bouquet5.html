@@ -197,13 +197,13 @@ float: right;
     <div class="floatright">
     <h1 style="text-align: center; margin-top: 10px;">Customize your order here!</h1>
         
-        <div id="formcontainer">
+               <div id="formcontainer">
         <form action="/action_page.php">
-            <label for="flavour">Flavour</label>
+            <label for="flavour">Flowers</label>
                 <select id="flavour" name="flavour">
-                    <option value=".5kg">Vanilla</option>
-                    <option value="1kg">Butterscotch</option>
-                    <option value="2kg">Strawberry</option>
+                    <option value=".5kg">Original</option>
+                    <option value="1kg">Artificial</option>
+                    <option value="2kg">Choclate</option>
                 </select> <br>
             <label for="quantity">Quantity</label>
                 <select id="quantity" name="quantity">
@@ -213,9 +213,12 @@ float: right;
                 </select>
             <label for="cakepic">Upload an Image</label>
                 <input type="text" id="cakepic" name="cakepic" placeholder="Upload an Image">
-            <label for="caketype">Type</label> <br>
-             <input type="checkbox" name="vehicle" value="Bike"> Egg
-             <input type="checkbox" name="vehicle" value="Car" checked> Eggless<br>
+            <label for="price">Price</label>
+                    <select id="price" name="price">
+                    <option value="Rs.200">Rs. 200</option>
+                    <option value="Rs.400">Rs. 400</option>
+                    <option value="Rs.600">Rs. 600</option>
+                    </select>
               <input type="submit" value="Order now">
         </div>
     
