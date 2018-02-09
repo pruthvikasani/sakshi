@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+     
+      <link rel="icon" href="home.png"/>
+    
+      <title>Craft Memories</title>
+<style>
+
+   @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+ body{
+	          margin: 0px;
+			padding: 0px;
+            color: gray;
+            font-family: "Source Sans Pro", Helvetica, sans-serif;
+            font-size: 25px;
+            
+		   }
+     #navdiv ul {
+	
+              width: 100%;
+              height: 70px;
+              background: #0d2733;
+              line-height: 70px;
+              color: white;
+              margin-right: 15px;
+              
+          }
+          #navdiv ul a{
+              text-decoration: none;
+              color: white;
+              padding: 20px;
+              
+          }
+          #navdiv{
+              opacity: 7;
+              filter: (opacity=70);
+          }
+          #navdiv ul li{
+              list-style-type: none;
+              display: inline-block;
+              float: right;
+              
+          }
+              *{
+                 margin: 0px;
+	             padding: 0px; 
+              }
+                 
+          #navdiv ul li:hover{
+              background: #173C4D;
+              transition: all 0.40s;
+          }
+          #navdiv h1{
+              
+              width: 300px;
+              font-size: 30px;
+              float: left;
+              cursor: pointer;
+              margin-left: 15px;
+          }
+          
+          footer{
+              
+              position: relative;
+              width: 100%;
+              height: 260px;
+              background: #383737;
+              margin-top: 40px;
+
+              line-height: 50px;
+              font-size: 20px;
+              font-family: Gill Sans MT;
+              
+              
+              }
+          #icons h2{
+              margin-top: 30px;
+            
+          }
+
+               
+               #icons ul li{
+              list-style-type: none;
+              display: inline-block;
+              padding: 15px;
+            
+              }
+          
+          #icons img:hover{
+              background: white;
+              transition: all 0.40s;
+
+          }
+          #icons img{
+              width: 60px;
+              height: 60px;
+              position: relative;
+              
+          }
+        #copy img{
+              width: 30px;
+              height: 30px;
+              position: relative;
+              
+          }
+          #copy p{
+              margin-left: 10px;
+              margin-right: 10px;
+          }
+    input[type=text],select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+    #formcontainer {
+    width: 45%;
+    padding: 12px 20px;
+    margin: auto;
+    margin-top: 30px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.6), 0 8px 24px 0 rgba(0, 0, 0, 0.39);
+    box-sizing: border-box;
+   
+    }
+    input[type=submit] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    margin-right: 40px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 200px;
+    font-size: 18px;
+}
+
+    </style>
+</head>
+
+<body>
+    
+<div id="main">    
+	   <div id="navdiv">
+           
+	               <ul>
+                   <h1>Craft Memories</h1>
+                   <li><a href="help.html">Help</a></li>
+			       <li><a href="personalize.html">Personalize</a></li>
+                   <li><a href="bouquets.html">Bouquets</a></li>
+                   <li><a href="cakes.html">Cakes</a></li>
+                   <li><a href="index.html">Home</a></li>
+	           </ul>
+		    
+		 <div id="formcontainer">
+             <h3 style="text-align: center;">Personalize your Order here!</h3>
+        <form action="/action_page.php">
+            <label for="caketype">Order</label> <br>
+                <input type="checkbox" name="cake" value="cake">Cake
+                <input type="checkbox" name="bouquet" value="bouquet" checked>Bouquet<br>
+            <label for="cakepic">Upload an Image</label><br>
+                <input type="submit" value="Upload"> <br>
+            <label for="cakepic">Describe your Order</label>
+            <textarea rows="6" cols="77.5" placeholder="Say something about your order so that we can serve you better"></textarea>
+       
+              <input type="submit" value="Order">
+        </div>
+</div>
+    </div>
+
+
+    
+<footer>
+    
+       
+    <div id="icons">
+        <h2 align="center">Craft Memories</h2>
+        <h3 align="center">Follow us on</h3>
+        <ul align="center">
+            <li><a href=""> <img src="facebook.png"/> </a></li>
+            <li> <a href=""><img src="instagram.png"/></a></li>  
+            <li><a href=""><img src="twitter.png"/></a></li>
+        </ul>    
+   </div>
+    
+    
+   <div id="copy">
+         <p style="text-align:left;">
+            Copyright 2017.All rights received
+            <span style="float:right;">Made with <img src="heart.png"> by Sakshi</span>
+         </p>    
+   </div>
+</footer>
+   
+</body>
+</html>
