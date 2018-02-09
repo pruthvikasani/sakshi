@@ -192,39 +192,41 @@ float: right;
     <div class="floatleft">
     <h1 style="margin-left: 19px;">Bouquet name</h1>
     <img src="b5.png" style="width: 300px;margin-left: 20px; margin-top: 5px; border-radius: 10px;">
+    <h2 style="margin-left: 19px;">Rs. 700</h2>
     <p style="margin-left: 20px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing </p>
     </div>
     <div class="floatright">
     <h1 style="text-align: center; margin-top: 10px;">Customize your order here!</h1>
         
-               <div id="formcontainer">
+        <div id="formcontainer">
         <form action="/action_page.php">
-            <label for="flavour">Flowers</label>
-                <select id="flavour" name="flavour">
-                    <option value=".5kg">Original</option>
-                    <option value="1kg">Artificial</option>
-                    <option value="2kg">Choclate</option>
-                </select> <br>
-            <label for="quantity">Quantity</label>
+                <label for="quantity">Type</label><br>
+                
+                    <input type="radio" checked="checked" name="radio">
+                    <label class="container">Fresh Flowers</label>
+                    <span class="checkmark"></span> &nbsp;
+                
+                    <input type="radio" name="radio">
+                    <label class="container">Choclates</label>
+                    <span class="checkmark"></span>
+                
+                    <br>
+            <label for="quantity">Flowers</label>
                 <select id="quantity" name="quantity">
-                    <option value=".5kg">1/2 Kg</option>
-                    <option value="1kg">1 Kg</option>
-                    <option value="2kg">2 Kg</option>
+                    <option value="roses">Roses</option>
+                    <option value="lavender">Lavender</option>
+                    <option value="orchids">Orchids</option>
+                    <option value="carnations">Carnations</option>
+                    <option value="lilies">Lilies</option>
                 </select>
-            <label for="cakepic">Upload an Image</label>
-                <input type="text" id="cakepic" name="cakepic" placeholder="Upload an Image">
-            <label for="price">Price</label>
-                    <select id="price" name="price">
-                    <option value="Rs.200">Rs. 200</option>
-                    <option value="Rs.400">Rs. 400</option>
-                    <option value="Rs.600">Rs. 600</option>
-                    </select>
-              <input type="submit" value="Order now">
+            <label for="price">No. of Flowers(optional)</label>
+                <input type="text" id="flowerno" name="flowerno" placeholder="Flowers in number">
+            <input type="submit" value="Order now">
         </div>
     
     </div>
     <div style="clear: both;">
-</div
+        </div>
       
       
 
