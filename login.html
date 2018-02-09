@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+      <link rel="icon" href="home.png"/>
+    
+      <title>Bouquet name</title>
+<style>
+    
+     @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+ body{
+	          margin: 0px;
+			padding: 0px;
+            color: gray;
+            font-family: "Source Sans Pro", Helvetica, sans-serif;
+            font-size: 25px;
+            
+		   }
+    input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    
+    margin-right: 35px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 90px;
+    font-size: 18px;
+}
+       input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+       input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+    #formcontainer {
+    width: 30%;
+    padding: 12px 20px;
+    margin-left: 480px;
+    margin-top: 60px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+   
+    }
+</style>
+    
+<body>
+    <h2 style="margin-left: 470px; margin-top: 50px;">Welcome to Craft Memories</h2>
+    <div id="formcontainer">
+        <form action="/register.html">
+            <label for="cakepic">Username</label> <br>
+            <input type="text" id="username" name="username" placeholder="Username"> <br>
+            <label for="cakepic">Password</label> <br>
+            <input type="password" id="password" name="password" placeholder="Password">
+            
+            <input type="submit" value="Login">
+            <p>New user?</p>
+            <input type="submit" value="Register here">
+        </form>
+    </div>
+</body>

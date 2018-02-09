@@ -5,14 +5,14 @@
      
       <link rel="icon" href="home.png"/>
     
-      <title>Personalize</title>
+      <title>FAQ</title>
 <style>
 
    @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
  body{
 	          margin: 0px;
 			padding: 0px;
-            color: gray;
+            color: aliceblue;
             font-family: "Source Sans Pro", Helvetica, sans-serif;
             font-size: 25px;
             
@@ -61,20 +61,7 @@
               margin-left: 15px;
           }
           
-          footer{
-              
-              position: relative;
-              width: 100%;
-              height: 260px;
-              background: #383737;
-              margin-top: 40px;
-
-              line-height: 50px;
-              font-size: 20px;
-              font-family: Gill Sans MT;
-              
-              
-              }
+          
           #icons h2{
               margin-top: 30px;
             
@@ -109,42 +96,21 @@
               margin-left: 10px;
               margin-right: 10px;
           }
-    input[type=text],select{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-
-}
-    #formcontainer {
-    width: 45%;
-    padding: 12px 20px;
-    margin: auto;
-    margin-top: 30px;
-    border: 2px solid gray;
-    border-radius: 4px;
-    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.6), 0 8px 24px 0 rgba(0, 0, 0, 0.39);
-    box-sizing: border-box;
-   
-    }
-    input[type=submit] {
-    width: 20%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
+.container {
+    position: relative;
     text-align: center;
-    margin-right: 40px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-left: 200px;
-    font-size: 18px;
+    color: white;
 }
-
-    </style>
+    .centered {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-20%, -20%);
+    color: black;
+}
+    
+    
+</style>
 </head>
 
 <body>
@@ -161,45 +127,45 @@
                    <li><a href="index.html">Home</a></li>
 	           </ul>
 		    
-		 <div id="formcontainer">
-             <h3 style="text-align: center;">Personalize your Order here!</h3>
-        <form action="/action_page.php">
-            <label for="caketype">Order</label> <br>
-                <input type="checkbox" name="cake" value="cake">Cake
-                <input type="checkbox" name="bouquet" value="bouquet" checked>Bouquet<br>
-            <label for="cakepic">Upload an Image</label><br>
-                <input type="submit" value="Upload"> <br>
-            <label for="cakepic">Describe your Order</label>
-            <textarea rows="6" cols="77.5" placeholder="Say something about your order so that we can serve you better"></textarea>
-       
-              <input type="submit" value="Order">
+		</div>
+        <div class="container">
+          <img src="123.jpg" alt="Norway" style="width:100%;height:1400px;">      
+            <div class="centered">1.Can i choose my time of delivery?<br>
+                By paying additional delivery charge of Rs.50,you have the option to choose a Fixed Time slot for delivery.<br><br>
+
+                2.Is there any particular time of delivery?<br>
+                All orders are delivered during business hours (8 AM - 10 PM), unless you have opted for a Midnight or a Fixed time delivery.<br><br>
+
+                3.Can I get the order delivered midnight?<br>
+                We understand the emotions of celebrating an occasion on its eve. Thats why we have an option of a Midnight delivery for our customers. With an additional delivery charge of RS.100, you can get your order delivered between 23:30 to 00:30 hours on the date you choose.<br><br>
+
+                4.Is there any shipping charge?<br>
+                There are no Shipping Charges for Standard Delivery and all couriers delivered made within India.<br><br>
+
+                5.I don't want to disclose my personal information to the recipient, how do I place the order?<br>
+                we totally understand the surprise element. Click on 'dont disclose' option in entity.<br><br>
+
+                6.How do I know my order has been confirmed?<br>
+                As soon as your order is confirmed, you will receive an email & SMS along with your order number.<br><br>
+
+7.Are there any extra charges for same day delivery?<br>
+Yes! we charge Rs.100 for same day delivery.<br><br>
+
+8.How can I make a change in my order or cancel it?<br>
+If you need to make changes or cancel your order, please call us at +91-8099268088 or email us at craftmemories@gmail.com within 6 hours of placing your order.<br><br>
+
+9.Is refund available after cancellation?<br>
+Yes. If you cancel it within 6 hours from the time you booked.<br><br>
+
+10.Do we get any discount on our first order?<br>
+To welcome our new customers we give 10% discount on their first order.<br>
+            </div>    
+             
+      
         </div>
 </div>
-    </div>
 
 
-    
-<footer>
-    
-       
-    <div id="icons">
-        <h2 align="center">Craft Memories</h2>
-        <h3 align="center">Follow us on</h3>
-        <ul align="center">
-            <li><a href=""> <img src="facebook.png"/> </a></li>
-            <li> <a href=""><img src="instagram.png"/></a></li>  
-            <li><a href=""><img src="twitter.png"/></a></li>
-        </ul>    
-   </div>
-    
-    
-   <div id="copy">
-         <p style="text-align:left;">
-            Copyright 2017.All rights received
-            <span style="float:right;">Made with <img src="heart.png"> by Sakshi</span>
-         </p>    
-   </div>
-</footer>
    
 </body>
 </html>
