@@ -4,7 +4,12 @@
      
       <link rel="icon" href="home.png"/>
     
-      <title>Bouquet name</title>
+      <title>Login</title>
+     <script>
+    function openWin() {
+    window.open("indexnew.html");
+}
+    </script>
 <style>
     
      @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
@@ -16,7 +21,7 @@
             font-size: 25px;
             
 		   }
-    input[type=submit] {
+    input[type=button] {
     width: 50%;
     background-color: #4CAF50;
     color: white;
@@ -60,6 +65,7 @@
     box-sizing: border-box;
    
     }
+    
 </style>
     
 <body>
@@ -71,9 +77,10 @@
             <label for="cakepic">Password</label> <br>
             <input type="password" id="password" name="password" placeholder="Password">
             
-            <input type="submit" value="Login">
+            <input type="button" value="Login" onclick="openWin()">
             <p>New user?</p>
-            <input type="submit" value="Register here">
+
+            <a href="register.html">Click in this to Sign up</a>
         </form>
     </div>
 </body>

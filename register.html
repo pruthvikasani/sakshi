@@ -4,7 +4,12 @@
      
       <link rel="icon" href="home.png"/>
     
-      <title>Bouquet name</title>
+      <title>Sign Up</title>
+         <script>
+    function openWin() {
+    window.open("login.html");
+}
+    </script>
 <style>
     
      @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
@@ -16,7 +21,7 @@
             font-size: 25px;
             
 		   }
-    input[type=submit] {
+    input[type=button] {
     width: 50%;
     background-color: #4CAF50;
     color: white;
@@ -89,7 +94,7 @@
             <label for="cakepic">Mobile</label> <br>
             <input type="text" id="username" name="username" placeholder="Username"> <br>
             
-            <input type="submit" value="Sign up">
+            <input type="button" value="Sign Up" onclick="openWin()">
         </form>
     </div>
 </body>
