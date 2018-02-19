@@ -199,30 +199,29 @@ float: right;
     <h1 style="text-align: center; margin-top: 10px;">Customize your order here!</h1>
         
         <div id="formcontainer">
-        <form action="/action_page.php">
-                <label for="quantity">Type</label><br>
-                
-                    <input type="radio" checked="checked" name="radio">
+        <form action="bouquetorder.php" method="post">
+            <label for="type">Type</label> <br>
+                    <input type="radio" name="type" value="Fresh Flowers">
                     <label class="container">Fresh Flowers</label>
                     <span class="checkmark"></span> &nbsp;
                 
-                    <input type="radio" name="radio">
+                    <input type="radio" name="type" value="Choclates">
                     <label class="container">Choclates</label>
-                    <span class="checkmark"></span>
-                
-                    <br>
+                    <span class="checkmark"></span> <br>
+            
             <label for="quantity">Flowers</label>
-                <select id="quantity" name="quantity">
-                    <option value="roses">Roses</option>
-                    <option value="lavender">Lavender</option>
-                    <option value="orchids">Orchids</option>
-                    <option value="carnations">Carnations</option>
-                    <option value="lilies">Lilies</option>
+                <select id="flowers" name="flowers">
+                    <option value="Roses">Roses</option>
+                    <option value="Lavender">Lavender</option>
+                    <option value="Orchids">Orchids</option>
+                    <option value="Carnations">Carnations</option>
+                    <option value="Lilies">Lilies</option>
                 </select>
             <label for="price">No. of Flowers(optional)</label>
                 <input type="text" id="flowerno" name="flowerno" placeholder="Flowers in number">
-            <input type="submit" value="Order now">
+            <input type="submit" name="order" value="Order now">
         </div>
+    
     
     </div>
     <div style="clear: both;">

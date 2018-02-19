@@ -163,16 +163,22 @@
 		    
 		 <div id="formcontainer">
              <h3 style="text-align: center;">Personalize your Order here!</h3>
-        <form action="/action_page.php">
-            <label for="caketype">Order</label> <br>
-                <input type="checkbox" name="cake" value="cake">Cake
-                <input type="checkbox" name="bouquet" value="bouquet" checked>Bouquet<br>
+             <form action="personalize.php" method="post">
+        <label for="cakepic">Order</label> <br>
+                    <input type="radio" name="ordertype" value="cake">
+                    <label class="container">Cake</label>
+                    <span class="checkmark"></span> &nbsp;
+                
+                    <input type="radio" name="order" value="bouquet">
+                    <label class="container">Bouquet</label>
+                    <span class="checkmark"></span> <br>
             <label for="cakepic">Upload an Image</label><br>
-                <input type="submit" value="Upload"> <br>
+                <input type="submit" name="upload" value="Upload"> <br>
             <label for="cakepic">Describe your Order</label>
-            <textarea rows="6" cols="77.5" placeholder="Say something about your order so that we can serve you better"></textarea>
+            <textarea rows="6" cols="77.5" name="aboutorder" placeholder="Say something about your order so that we can serve you better"></textarea>
        
-              <input type="submit" value="Order">
+              <input type="submit" name="order" value="Order">
+             </form>
         </div>
 </div>
     </div>

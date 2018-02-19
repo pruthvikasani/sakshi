@@ -198,30 +198,33 @@ float: right;
     <div class="floatright">
     <h1 style="text-align: center; margin-top: 10px;">Customize your order here!</h1>
         
-        <div id="formcontainer">
-        <form action="/action_page.php">
+       <div id="formcontainer">
+        <form action="cakeorder.php" method="post">
             <label for="flavour">Flavour</label>
                 <select id="flavour" name="flavour">
-                    <option value=".5kg">Vanilla</option>
-                    <option value="1kg">Butterscotch</option>
-                    <option value="2kg">Strawberry</option>
+                    <option value="vanila">Vanilla</option>
+                    <option value="butterscotch">Butterscotch</option>
+                    <option value="strawberry">Strawberry</option>
                 </select> <br>
             <label for="quantity">Quantity</label>
                 <select id="quantity" name="quantity">
-                    <option value=".5kg">1/2 Kg</option>
+                    <option value="0.5kg">1/2 Kg</option>
                     <option value="1kg">1 Kg</option>
                     <option value="2kg">2 Kg</option>
                 </select>
-
-            <label for="caketype">Type</label> <br>
-             <input type="checkbox" name="vehicle" value="Bike"> Egg
-             <input type="checkbox" name="vehicle" value="Car" checked> Eggless<br>
-              <input type="submit" value="Order now">
+            <label for="cakepic">Type</label> <br>
+                    <input type="radio" name="type" value="egg">
+                    <label class="container">Egg</label>
+                    <span class="checkmark"></span> &nbsp;
+                
+                    <input type="radio" name="type" value="eggless">
+                    <label class="container">Eggless</label>
+                    <span class="checkmark"></span> <br>
+              <input type="submit" name="order" value="Order now">
         </div>
-    
     </div>
     <div style="clear: both;">
-</div
+        </div>
       
       
 

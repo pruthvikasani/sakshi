@@ -1,15 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-     
-      <link rel="icon" href="home.png"/>
-    
       <title>Sign Up</title>
-         <script>
-    function openWin() {
-    window.open("login.html");
-}
-    </script>
+
 <style>
     
      @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
@@ -21,7 +14,7 @@
             font-size: 25px;
             
 		   }
-    input[type=button] {
+    .btn {
     width: 50%;
     background-color: #4CAF50;
     color: white;
@@ -69,32 +62,33 @@
 <body>
     <h2 style="margin-left: 420px; margin-top: 20px;">Register here to create an account</h2>
     <div id="formcontainer">
-        <form action="/login.html">
+        <form action="register.php" method="post">
             <label for="cakepic">Firstname</label> <br>
-            <input type="text" id="username" name="username" placeholder="Username"> <br>
+            <input type="text" id="username" name="firstname" placeholder="First name"> <br>
              <label for="cakepic">Lastname</label> <br>
-            <input type="text" id="username" name="username" placeholder="Username"> <br>
+            <input type="text" id="username" name="lastname" placeholder="Last name"> <br>
             
             
             <label for="cakepic">Gender</label> <br>
-                <input type="radio" checked="checked" name="male">
+                    <input type="radio" name="radio" value="male">
                     <label class="container">Male</label>
                     <span class="checkmark"></span> &nbsp;
                 
-                    <input type="radio" name="female">
+                    <input type="radio" name="radio" value="female">
                     <label class="container">Female</label>
-                    <span class="checkmark"></span>
+                    <span class="checkmark"></span> <br>
+            <label for="cakepic">Username</label>
             <input type="text" id="username" name="username" placeholder="Username"> <br>
             <label for="cakepic">Email</label> <br>
-            <input type="password" id="password" name="password" placeholder="Password">
+            <input type="password" id="password" name="email" placeholder="Email">
             <label for="cakepic">Password</label> <br>
-            <input type="text" id="username" name="username" placeholder="Username"> <br>
+            <input type="text" id="username" name="password" placeholder="Password"> <br>
             <label for="cakepic">Repeat Password</label> <br>
-            <input type="text" id="username" name="username" placeholder="Username"> <br>
+            <input type="text" id="username" name="repassword" placeholder="Retype the Password"> <br>
             <label for="cakepic">Mobile</label> <br>
-            <input type="text" id="username" name="username" placeholder="Username"> <br>
+            <input type="text" id="username" name="mobile" placeholder="Mobile number"> <br>
             
-            <input type="button" value="Sign Up" onclick="openWin()">
+            <input class="btn" type="submit" name="register" value="Register"/>
         </form>
     </div>
 </body>

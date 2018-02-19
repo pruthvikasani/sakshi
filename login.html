@@ -5,11 +5,7 @@
       <link rel="icon" href="home.png"/>
     
       <title>Login</title>
-     <script>
-    function openWin() {
-    window.open("indexnew.html");
-}
-    </script>
+
 <style>
     
      @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
@@ -71,16 +67,17 @@
 <body>
     <h2 style="margin-left: 470px; margin-top: 50px;">Welcome to Craft Memories</h2>
     <div id="formcontainer">
-        <form action="/register.html">
-            <label for="cakepic">Username</label> <br>
+        <form action="login.php" method="post"> 
+            <label for="username">Username</label> <br>
             <input type="text" id="username" name="username" placeholder="Username"> <br>
-            <label for="cakepic">Password</label> <br>
+            <label for="password">Password</label> <br>
             <input type="password" id="password" name="password" placeholder="Password">
             
-            <input type="button" value="Login" onclick="openWin()">
+            <input class="btn" type="submit" name="login" value="Login"/>
             <p>New user?</p>
-
+            
             <a href="register.html">Click in this to Sign up</a>
         </form>
     </div>
 </body>
+  
