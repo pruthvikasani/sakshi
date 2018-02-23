@@ -21,7 +21,7 @@ if(isset($_POST['order']))
     $sql="INSERT INTO `bouquet` VALUES ('".$typevar."','".$flowersvar."','".$flowernovar."')";
     $conn->query($sql);  
     
-    header("Location: bouquet1.html");
+    header("Location: confirmation.html");
 
 }
 $conn->close();
