@@ -1,8 +1,5 @@
 <?php
 
-   session_start();
-
-
    $servername = "localhost";
    $username = "root";
    $password = "";
@@ -14,18 +11,20 @@ if ($conn->connect_error)
 {
     die("Connection failed: " . $conn->connect_error);
 }
-//echo "$price";
-if(isset($_POST['order']))
+if(isset($_POST['Pay']))
 {
-     $flavourvar=$_POST['flavour'];
-     $quantityvar=$_POST['quantity'];
-     $typevar=$_POST['typeof'];
+    $cardnovar=$_POST['cardno'];
+    $cvvvar=$_POST['cvv'];
+    $expiryvar=$_POST['expiry'];
+    $holdernamevar=$_POST['holdername'];
+
     
-    $sql="INSERT INTO `ordertable` VALUES ('".$flavourvar."','".$quantityvar."','".$typevar."')";
+    $sql="INSERT INTO `carddetails` VALUES  ('".$cardnovar."','".$expiryvar."','".$cvvvar."','".$holdernamevar."')";
     $conn->query($sql);  
-    
-    header("Location: confirmation.php");
+ 
+    header("Location: thanks.html");
     
 }
+
 $conn->close();
 ?>

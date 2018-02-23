@@ -1,5 +1,5 @@
-<?php 
-<!DOCTYPE html>
+
+
 <html>
 <head>
      
@@ -173,68 +173,69 @@ float: right;
 </head>
 
 <body>
-    
-<div id="main">    
-	   <div id="navdiv">
+ <?php
+       session_start();
+            $_SESSION['cakename'] = 'Choclate truffle';
+            $_SESSION['price'] = 'Rs. 700';
+echo "<div id='main'>    
+	   <div id='navdiv'>
            
 	               <ul>
                    <h1>Craft Memories</h1>
-                   <li><a href="faq.html">FAQ</a></li>
-			       <li><a href="personalize.html">Personalize</a></li>
-                   <li><a href="bouquets.html">Bouquets</a></li>
-                   <li><a href="cakes.html">Cakes</a></li>
-                   <li><a href="index.html">Home</a></li>
+                   <li><a href='faq.html'>FAQ</a></li>
+			       <li><a href='personalize.html'>Personalize</a></li>
+                   <li><a href='bouquets.html'>Bouquets</a></li>
+                   <li><a href='cakes.html'>Cakes</a></li>
+                   <li><a href='index.html'>Home</a></li>
 	           </ul>
 		    
 		</div>
   
-<div class="wrap">
-    <div class="floatleft">
-    <h1 style="margin-left: 19px;">Cake name</h1>
-    <img src="cakeimages/cake1.jpg" style="width: 300px;margin-left: 20px; margin-top: 5px; border-radius: 10px;">
-    <h2 style="margin-left: 19px;">Rs. 700</h2>
-    <p style="margin-left: 20px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing </p>
+<div class='wrap'>
+    <div class='floatleft'>
+    <h1 style='margin-left: 19px;'>Choclate Truffle</h1>
+    <img src='cakeimages/cake1.jpg' style='width: 300px;margin-left: 20px; margin-top: 5px; border-radius: 10px;'>
+    <h2 style='margin-left: 19px;'>Rs. 700</h2>
+    <p style='margin-left: 20px;'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing </p>
     </div>
-    <div class="floatright">
-    <h1 style="text-align: center; margin-top: 10px;">Customize your order here!</h1>
+    <div class='floatright'>
+    <h1 style='text-align: center; margin-top: 10px;'>Customize your order here!</h1>
         
-        <div id="formcontainer">
-        <form action="cakeorder.php" method="post">
-            <label for="flavour">Flavour</label>
-                <select id="flavour" name="flavour">
-                    <option value="vanila">Vanilla</option>
-                    <option value="butterscotch">Butterscotch</option>
-                    <option value="strawberry">Strawberry</option>
+        <div id='formcontainer'>
+
+           
+
+        <form action='cakeorder.php' method='post'>
+            <label for='flavour'>Flavour</label>
+                <select id='flavour' name='flavour'>
+                    <option value='vanila'>Vanilla</option>
+                    <option value='butterscotch'>Butterscotch</option>
+                    <option value='strawberry'>Strawberry</option>
                 </select> <br>
-            <label for="quantity">Quantity</label>
-                <select id="quantity" name="quantity">
-                    <option value="0.5kg">1/2 Kg</option>
-                    <option value="1kg">1 Kg</option>
-                    <option value="2kg">2 Kg</option>
+            <label for='quantity'>Quantity</label>
+                <select id='quantity' name='quantity'>
+                    <option value='0.5kg'>1/2 Kg</option>
+                    <option value='1kg'>1 Kg</option>
+                    <option value='2kg'>2 Kg</option>
                 </select>
-            <label for="cakepic">Type</label> <br>
-                    <input type="radio" name="type" value="egg">
-                    <label class="container">Egg</label>
-                    <span class="checkmark"></span> &nbsp;
+            <label for='cakepic'>Type</label> <br>
+                    <input type='radio' name='typeof' value='egg'>
+                    <label class='container'>Egg</label>
+                    <span class='checkmark'></span> &nbsp;
                 
-                    <input type="radio" name="type" value="eggless">
-                    <label class="container">Eggless</label>
-                    <span class="checkmark"></span> <br>
-              <input type="submit" name="order" value="Order now">
+                    <input type='radio' name='typeof' value='eggless'>
+                    <label class='container'>Eggless</label>
+                    <span class='checkmark'></span> <br>
+              <input type='submit' name='order' value='Order now'>
         </div>
     
     </div>
-    <div style="clear: both;">
+    <div style='clear: both;'>
     </div>
-      
-      
+        
+                
 
-</div>
-
-
-    
-
-   
+</div>";
+?>
 </body>
 </html>
-?>
